@@ -8,10 +8,5 @@ export default function PrivateRoute({ children }) {
   return currentUser ? children : <Navigate to="/login" />;
 }
 
-<Route path="/" element={
-  <PrivateRoute>
-    <Dashboard />
-  </PrivateRoute>
-  }
-></Route>
+
   
