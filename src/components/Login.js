@@ -21,8 +21,8 @@ export default function Login() {
       navigate.push("/")
     } catch {
       setError("Failed to log in")
+      console.log(error)
     }
-
     setLoading(false)
   }
 
